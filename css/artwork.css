@@ -43,8 +43,15 @@ main {
     justify-content: space-between;
     width: 100%; /* Ensure it takes full width */
     padding: 0 300px;
-
 }
+
+@media (max-width: 768px) {
+    .filter-controls {
+        padding: 0 15px; /* Smaller padding for mobile */
+        justify-content: center; /* Ensure buttons are centered */
+    }
+}
+
 
 /* Push the search bar to the right */
 .input-group {
@@ -75,7 +82,7 @@ button.btn-secondary {
 
 /*Navigation links styling*/
 .nav_links {
-    font-size: 20px;
+    font: size 20px;
     list-style: none;
     display: flex;
     justify-content: center;
@@ -95,74 +102,17 @@ button.btn-secondary {
     background-color: rgba(255,255, 255, 0.5);
 }
 
-.card {
-    flex: 1 1 300px;
-    margin: 20px auto; /* Center the card and add some vertical spacing */
-    width: 100%; /* Make it full width */
-    max-width: 500px; /* Set a max-width for larger screens */
-    display: flex;
-    flex-direction: column; /* Stack children vertically */
-    height: 100%; /* Allow card to fill available height */
-    min-height: 300px; /* Ensure a minimum height */
-    padding: 20px; /* Add some padding to the card */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
-}
-
-/* Card image styling */
+/* Card image and layout */
 .card-img-top {
-    height: 420px; /* Fixed height for images */
-    object-fit: cover; /* Cover to maintain aspect ratio */
-    margin-bottom: 15px; /* Space between image and card body */
+    height: 420px;
+    object-fit: cover;
 }
 
-/* Card body styling */
-.card-body {
-    display: flex; /* Use Flexbox for card body */
-    flex-direction: column; /* Stack content vertically */
-    flex-grow: 1; /* Allow card body to grow and fill remaining space */
-    justify-content: space-between; /* Distribute space between elements */
-}
-
-/* Card heading styling */
-.card-title {
-    flex-shrink: 0; /* Prevent title from shrinking */
-}
-
-/* Card text styling */
-.card-text {
-    flex-grow: 1; /* Allow text to grow and take available space */
-}
-
-/* Button container styling */
-.card-body .d-flex {
-    margin-top: 10px; /* Space between content and buttons */
-}
-
-
-.modal-dialog {
-    max-width: 800px;
-    min-width: 300px; /* Adjust to your preferred max width */
-    margin: 1.75rem auto; /* Center the modal */
-}
-
-@media (min-width: 768px) {
-    .card {
-        width: 100%; /* Ensure full width on medium+ screens */
-    }
-}
-
-.search-results {
-    display: flex; /* Use Flexbox to align content */
-    flex-direction: column; /* Stack results vertically */
-    align-items: center; /* Center align items */
-    margin-top: 20px; /* Margin to separate from other content */
-}
-
-.row {
-    display: flex; /* Use Flexbox for the row */
-    justify-content: center; /* Center the cards */
-    flex-wrap: wrap; /* Allow wrapping of cards */
-    margin-bottom: 20px; /* Space between rows */
+.card {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 /* Card content and heading styling */

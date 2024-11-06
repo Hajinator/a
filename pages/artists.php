@@ -27,10 +27,10 @@
 <div class="container">
     <form method="GET" action="artists.php">
         <div class="filter-controls mb-3">
-            <div class="row g-2 align-items-center">
+            <div class="row g-2 align-items-center justify-content-center">
 
                 <!-- Century Dropdown Menu -->
-                <div class="col-12 col-md-auto">
+                <div class="col-12 col-md-auto text-center">
                     <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle w-100" type="button" id="centuryDropdown"
                             data-bs-toggle="dropdown" aria-expanded="false">
@@ -50,7 +50,7 @@
                 </div>
 
                 <!-- Nationality Dropdown Menu -->
-                <div class="col-12 col-md-auto">
+                <div class="col-12 col-md-auto text-center">
                     <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle w-100" type="button" id="nationalityDropdown"
                             data-bs-toggle="dropdown" aria-expanded="false">
@@ -69,7 +69,7 @@
                 </div>
 
                 <!-- Add Artist Button -->
-                <div class="col-12 col-md-auto">
+                <div class="col-12 col-md-auto text-center">
                     <button class="btn btn-secondary w-100" type="button" data-bs-toggle="modal"
                         data-bs-target="#addArtistModal">
                         Add Artist
@@ -77,7 +77,7 @@
                 </div>
 
                 <!-- Search Input box -->
-                <div class="col-12 col-md">
+                <div class="col-12 col-md text-center">
                     <div class="input-group">
                         <input type="text" class="form-control" name="search" id="searchInput"
                             placeholder="Search Artists" aria-label="Search for artists"

@@ -122,10 +122,11 @@ foreach ($paintings as &$painting) {
 ?>
 
 <!-- Paintings are displayed in bootstrap cards-->
-<div id="paintingCards" class="row g-3">
+<div class="container px-5">
+<div id="paintingCards" class="row g-4">
     <?php if (count($paintings) > 0): ?>
     <?php array_map(function($painting) { ?>
-    <div class="col-md-4">
+    <div class="col-md-4 col-sm-12">
         <div class="card mb-3 mt-3">
             <img src="<?= htmlspecialchars($painting['image_blob']); ?>" class="card-img-top"
                 alt="<?= htmlspecialchars($painting['Title']); ?>"
@@ -159,6 +160,7 @@ foreach ($paintings as &$painting) {
 <?php else: ?>
 <p>No unique paintings found.</p>
 <?php endif; ?>
+</div>
 </div>
 
 

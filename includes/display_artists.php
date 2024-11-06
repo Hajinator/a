@@ -99,10 +99,11 @@ foreach ($artists as &$artist) {
 ?>
 
 <!-- Artists are displayed in bootstrap cards -->
-<div id="artistCards" class="row g-3">
+ <div class="container px-5">
+<div id="artistCards" class="row g-4">
     <?php if (count($artists) > 0): ?>
         <?php array_map(function($artist) { ?>
-            <div class="col-md-4 col-sm-12"> <!-- Use col-sm-12 for smaller devices -->
+            <div class="col-md-4 col-sm-12"> 
                 <div class="card mb-3 mt-3">
                     <img src="<?= htmlspecialchars($artist['thumbnail_blob']); ?>" class="card-img-top"
                          alt="<?= htmlspecialchars($artist['Name']); ?>"
@@ -133,6 +134,7 @@ foreach ($artists as &$artist) {
     <?php else: ?>
         <p>No artists found.</p>
     <?php endif; ?>
+</div>
 </div>
 
 

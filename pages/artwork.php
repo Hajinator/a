@@ -27,7 +27,7 @@
 <div class="container">
     <form method="GET" action="artwork.php">
         <div class="filter-controls mb-3">
-            <div class="row g-2 align-items-center">
+            <div class="row g-2 align-items-center justify-content-center">
 
                 <!-- Artist Dropdown Menu -->
                 <div class="col-12 col-md-auto">
