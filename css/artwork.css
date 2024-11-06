@@ -1,0 +1,206 @@
+/*Styling for artwork.php*/
+
+/*Import Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*Body styling*/
+body {
+    background-image: url("RedBackground.png");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Dropdown positioning */
+.dropdown {
+    position: relative;
+}
+
+/* General font and text settings */
+li,
+a,
+footer,
+button,
+h5,
+main {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+/*Filter controls layout */
+.filter-controls {
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: space-between;
+    width: 100%; /* Ensure it takes full width */
+    padding: 0 300px;
+
+}
+
+/* Push the search bar to the right */
+.input-group {
+    margin-left: auto;
+}
+
+/* Input field styling */
+.input-group .form-control {
+    font-family: 'Playfair Display', serif; 
+    font-weight: 500;
+    font-size: 17px;
+}
+
+/*Search button styling */
+.input-group .input-group-text {
+    font-family: 'Playfair Display', serif; 
+    font-weight: 500;
+    font-size: 17px;
+}
+
+
+button.btn-secondary {
+    font-family: 'Playfair Display', serif !important;
+    font-weight: 500 !important;
+    font-size: 17px !important;
+}
+
+
+/*Navigation links styling*/
+.nav_links {
+    font-size: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.nav_links li a:hover {
+    color: rgb(255, 0, 0);
+    background-color: rgba(255,255, 255, 0.5);
+}
+
+.card {
+    flex: 1 1 300px;
+    margin: 20px auto; /* Center the card and add some vertical spacing */
+    width: 100%; /* Make it full width */
+    max-width: 500px; /* Set a max-width for larger screens */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    height: 100%; /* Allow card to fill available height */
+    min-height: 300px; /* Ensure a minimum height */
+    padding: 20px; /* Add some padding to the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+}
+
+/* Card image styling */
+.card-img-top {
+    height: 420px; /* Fixed height for images */
+    object-fit: cover; /* Cover to maintain aspect ratio */
+    margin-bottom: 15px; /* Space between image and card body */
+}
+
+/* Card body styling */
+.card-body {
+    display: flex; /* Use Flexbox for card body */
+    flex-direction: column; /* Stack content vertically */
+    flex-grow: 1; /* Allow card body to grow and fill remaining space */
+    justify-content: space-between; /* Distribute space between elements */
+}
+
+/* Card heading styling */
+.card-title {
+    flex-shrink: 0; /* Prevent title from shrinking */
+}
+
+/* Card text styling */
+.card-text {
+    flex-grow: 1; /* Allow text to grow and take available space */
+}
+
+/* Button container styling */
+.card-body .d-flex {
+    margin-top: 10px; /* Space between content and buttons */
+}
+
+
+.modal-dialog {
+    max-width: 800px;
+    min-width: 300px; /* Adjust to your preferred max width */
+    margin: 1.75rem auto; /* Center the modal */
+}
+
+@media (min-width: 768px) {
+    .card {
+        width: 100%; /* Ensure full width on medium+ screens */
+    }
+}
+
+.search-results {
+    display: flex; /* Use Flexbox to align content */
+    flex-direction: column; /* Stack results vertically */
+    align-items: center; /* Center align items */
+    margin-top: 20px; /* Margin to separate from other content */
+}
+
+.row {
+    display: flex; /* Use Flexbox for the row */
+    justify-content: center; /* Center the cards */
+    flex-wrap: wrap; /* Allow wrapping of cards */
+    margin-bottom: 20px; /* Space between rows */
+}
+
+/* Card content and heading styling */
+.card-body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    line-height: 0.5;
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+}
+
+/* Card heading styling */
+h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    line-height: 2;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+
+/* Custom button width */
+.btn-custom {
+    width: 125px;
+    
+}
+
+/* Pagination container padding */
+.pagination-container {
+    padding-top: 50px;
+}
+
+
+.pagination .page-item.active .page-link {
+    background-color: red; /* Set active page link background to red */
+    border-color: red; /* Set active page link border to red */
+}
+
+.pagination .page-link {
+    color: red; /* Set pagination link text color to red */
+}
+
